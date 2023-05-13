@@ -118,3 +118,9 @@ a:link {
   cursor: pointer;
   border-radius: 30px;
 }
+
+.my_links {
+  text-align: center;
+  position: relative;
+  top: -40px;
+}
