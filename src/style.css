@@ -100,5 +100,18 @@ input::placeholder {
 }
 
 .city-search-button {
-  padding-left: 15px;
+  padding: 0 20px 0 20px;
+  border: none;
+  outline: none;
+
+  background: radial-gradient(
+    circle at 12.3% 19.3%,
+    rgb(85, 88, 218) 0%,
+    rgb(95, 209, 249) 100.2%
+  );
+  color: #141010;
+  height: 40px;
+  width: 80px;
+  cursor: pointer;
+  border-radius: 30px;
 }
