@@ -50,19 +50,22 @@ input::placeholder {
   font-size: 14px;
 }
 
-#weather-description {
-  background: #1e1e1e;
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  border-radius: 30px;
-}
-
 .weather_icon img {
   width: 100px;
 }
 
 #weather-temperature {
   font-size: 1.75rem;
+}
+
+.unit {
+  font-size: 20px;
+  position: relative;
+  top: -12px;
+}
+
+a:link {
+  text-decoration: none;
 }
 
 .weather_card {
