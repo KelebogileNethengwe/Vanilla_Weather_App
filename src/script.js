@@ -4,6 +4,8 @@ searchForm.addEventListener("submit", handleSubmit);
 let currentLocationButton = document.querySelector(".current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
+let iconElement = document.querySelector("#icon");
+
 let now = new Date();
 let today = now.getDay();
 
@@ -57,12 +59,12 @@ function displayWeatherCondition(response) {
   );
 
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
-  document.querySelector("#precipitation").innerHTML =
-    response.data.main.pressure;
+  document.querySelector("#feels_like").innerHTML =
+    response.data.main.feels_like;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
-  document.querySelector("#weather-description").innerHTML =
+  document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
 }
 
