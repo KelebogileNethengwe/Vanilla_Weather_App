@@ -31,63 +31,62 @@
           autocomplete="off"
         />
 
-       <button class='city-search-button'> <i class="fa-solid fa-magnifying-glass" value='submit'></i></button>
+        <button class="city-search-button">
+          <i class="fa-solid fa-magnifying-glass" value="submit"></i>
+        </button>
         <button class="current-location-button">current location</button>
       </form>
-      
 
       <div class="weather__body">
-            <h3 class="weather__city">Johannesburg</h3>
-            <div id="datetime">Tueday 16:00
-          
-            </div>
-            <div id="weather-description">Partly Cloudy</div>
-            <div class="weather__icon">
-              <img
+        <h3 class="weather__city">Johannesburg</h3>
+        <div id="datetime"></div>
+        <div>
+          <p id="description">Partly Cloudy</p>
+        </div>
+        <div class="weather__icon">
+          <img
             src="https://openweathermap.org/img/wn/04d@2x.png"
             alt="weather-icon"
             id="icon"
           />
-            </div>
-            
-            <p> <span id="weather-temperature">18</span>°</p>
         </div>
 
-
-
- <div class="weather_info  row">
-          
-            <div class="weather_card col">
-                <i class="fa-solid fa-droplet"></i>
-                <div>
-                    <p>Humidity</p>
-                    <p> <span id="humidity">18</span> %</p>
-                </div>
-            </div>
-            <div class="weather_card col">
-                <i class="fa-solid fa-cloud-rain"></i>
-                <div>
-                    <p>Pressure</p>
-                   <p> <span id="humidity">18</span> %</p>
-                </div>
-              </div>
-            <div class="weather_card col">
-                <i class="fa-solid fa-wind"></i>
-                <div>
-                    <p>Wind</p>
-                    <p> <span id="wind">18</span> km/h</p>
-                </div>
-            </div>
-                 
-        </div>
-           
-  
+        <p>
+          <span id="weather-temperature">18</span
+          ><span class="unit"
+            ><sup><a href="#" id="celsius">° C </a> </sup></span
+          >
+        </p>
       </div>
-      <script
-        src="https://kit.fontawesome.com/a7a7e08eb2.js"
-        crossorigin="anonymous"
-      ></script>
-      <script src="src/script.js"></script>
+
+      <div class="weather_info row">
+        <div class="weather_card col">
+          <i class="fa-solid fa-droplet"></i>
+          <div>
+            <p>Humidity</p>
+            <p><span id="humidity">18</span> %</p>
+          </div>
+        </div>
+        <div class="weather_card col">
+          <i class="fa-solid fa-temperature-quarter"></i>
+          <div>
+            <p>Feels like</p>
+            <p><span id="feels_like">18</span> <sup>°</sup></p>
+          </div>
+        </div>
+        <div class="weather_card col">
+          <i class="fa-solid fa-wind"></i>
+          <div>
+            <p>Wind</p>
+            <p><span id="wind">18</span> km/h</p>
+          </div>
+        </div>
+      </div>
     </div>
+    <script
+      src="https://kit.fontawesome.com/a7a7e08eb2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="src/script.js"></script>
   </body>
 </html>
