@@ -96,3 +96,31 @@ function getCurrentLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
+
+
+let temperature = 18;
+let isCelsius = true;
+
+
+
+const temperatureElement = document.getElementById("weather-temperature");
+const unitElement = document.getElementById("celsius");
+
+unitElement.addEventListener("click", changeTemperatureUnit);
+
+function changeTemperatureUnit() {
+  let currentTemperature = parseFloat(temperatureElement.textContent);
+  let currentUnit = unitElement.textContent.trim();
+
+  if (currentUnit === "° C") {
+    let fahrenheitTemperature = (currentTemperature * 9) / 5 + 32;
+    fahrenheitTemperature = Math.round(fahrenheitTemperature);
+    temperatureElement.textContent = fahrenheitTemperature;
+    unitElement.textContent = "° F";
+  } else if (currentUnit === "° F") {
+    let celsiusTemperature = ((currentTemperature - 32) * 5) / 9;
+    celsiusTemperature = Math.round(celsiusTemperature);
+    temperatureElement.textContent = celsiusTemperature;
+    unitElement.textContent = "° C";
+  }
+}
