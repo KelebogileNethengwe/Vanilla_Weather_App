@@ -53,7 +53,7 @@ let dateTime = document.querySelector("#datetime");
 dateTime.innerHTML = `${day} ${hour}:${minutes}`;
 
 function displayWeatherCondition(response) {
-  document.querySelector("h3").innerHTML = response.data.name;
+  document.querySelector("h2").innerHTML = response.data.name;
   document.querySelector("#weather-temperature").innerHTML = Math.round(
     response.data.main.temp
   );
@@ -69,7 +69,7 @@ function displayWeatherCondition(response) {
 
   iconElement.setAttribute(
     "src",
-    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
 }
 
@@ -78,6 +78,7 @@ function searchCity(city) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayWeatherCondition);
 }
+
 function handleSubmit(event) {
   event.preventDefault();
   let city1 = document.querySelector("#input-search").value;
