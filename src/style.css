@@ -119,8 +119,38 @@ a:link {
   border-radius: 30px;
 }
 
+.WeatherForecast {
+  display: flex;
+  align-items: center;
+  background: #1e1e1e;
+  padding: 30px;
+  border-radius: 10px;
+  margin: 10px;
+  position: relative;
+  left: 11px;
+  top: 10px;
+}
+
+.col {
+  position: relative;
+  left: 20px;
+}
+
+#weekly-forecast-icon {
+  margin-left: -14px;
+}
+
+.max-temperature {
+  margin-right: 36px;
+  margin-left: -10px;
+}
+.min-temperature {
+  color: #597e9b;
+  margin-left: -18px;
+}
+
 .my_links {
   text-align: center;
   position: relative;
-  top: -40px;
+  top: 36px;
 }
