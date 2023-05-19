@@ -141,12 +141,11 @@ a:link {
 }
 
 .max-temperature {
-  margin-right: 36px;
-  margin-left: -10px;
+  margin-right: 10px;
+  margin-left: -4px;
 }
 .min-temperature {
   color: #597e9b;
-  margin-left: -18px;
 }
 
 .my_links {
