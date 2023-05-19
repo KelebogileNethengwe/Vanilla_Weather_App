@@ -75,6 +75,8 @@ a:link {
   padding: 10px;
   border-radius: 10px;
   margin: 10px;
+  position: relative;
+  left: -2px;
 }
 
 .weather_card i {
@@ -129,11 +131,6 @@ a:link {
   position: relative;
   left: 11px;
   top: 10px;
-}
-
-.col {
-  position: relative;
-  left: 20px;
 }
 
 #weekly-forecast-icon {
