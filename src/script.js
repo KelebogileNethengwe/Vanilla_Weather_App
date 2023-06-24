@@ -130,7 +130,7 @@ function displayWeatherCondition(response) {
 function searchCity(city) {
   let apiKey = "62bc298785543e137bc6756e514eb1c3";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(displayWeatherForecast);
+  axios.get(apiUrl).then(displayWeatherCondition);
 }
 
 function handleSubmit(event) {
